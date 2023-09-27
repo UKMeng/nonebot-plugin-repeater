@@ -47,7 +47,7 @@ async def repeater(bot: Bot, event: Event):
     session = extract_session(bot, event)
     logger.debug(session)
     # 如果是私聊，跳过
-    if(session.level != SessionLevel.LEVEL2):
+    if(session.level == SessionLevel.LEVEL1):
         logger.debug(f"非群聊消息，跳过")
         m.finish()
     else:
