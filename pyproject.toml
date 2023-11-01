@@ -9,11 +9,9 @@ packages = [{include = "nonebot_plugin_repeater"}]
 
 [tool.poetry.dependencies]
 python = ">=3.8,<4.0"
-nonebot-plugin-alconna = "^0.25.0"
-nonebot-plugin-session = "^0.1.0"
-# 想要用red最好用dev分支
-# nonebot-plugin-session = {git = "https://github.com/noneplugin/nonebot-plugin-session.git", rev = "dev"}
 nonebot-plugin-send-anything-anywhere = "^0.3.0"
+nonebot-plugin-session = "^0.2.0"
+nonebot-plugin-alconna = "^0.31.2"
 
 [tool.poetry.group.dev.dependencies]
 nonebot2 = {extras = ["fastapi", "httpx", "webscokets"], version = "^2.1.0"}

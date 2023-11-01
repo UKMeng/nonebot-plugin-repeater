@@ -38,8 +38,6 @@ def message_preprocess(raw_message):
             logger.debug(f"图片 {list(seg.values())[1]}")
         elif seg.type == "text":
             message += seg
-
-    logger.debug(f"总 {message}")
     return message
 
 @m.handle()
